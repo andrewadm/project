@@ -3,11 +3,10 @@
 }
 /* Обратите внимание на измения для "липкой" шапки, пометил их звездочкой ниже */
 header {
-    position: relative;
-    height: 50px; /* * */
+    position: sticky;
+    top:0px;
 }
 nav {
-    position: fixed; /* * */
     width: 100%; /* * */
     height: 50px;
     background-color: #212121;
@@ -33,7 +32,7 @@ nav {
 }
 
 .subheader {
-    position: absolute;
+    
     top: 50px; /* * */
     width: 100%;
     height: 84px;
@@ -88,6 +87,50 @@ nav {
     text-transform: uppercase;
 }
 .promo{
-min-height: 800px;
-background-image:url(/src/img/uber_bg.jpeg) ;
+    min-height: 800px;
+    background-image:url(../img/uber_bg.jpeg) ;
+}
+.promo .promo_header{
+    margin-top: 120px;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+.promo .promo_subheader{
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.promo .promo_descr{
+    width: 985px;
+    height: 173px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.promo_btn{
+    margin: auto;
+    margin-top: 140px;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 4px;
+    background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
 }
